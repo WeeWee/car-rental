@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600;700&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600;700&display=swap"); */
+
+@layer components {
+	.select-field {
+		@apply bg-gray-800  border border-gray-600 placeholder-gray-400  text-white focus:ring-blue-500 focus:border-blue-500  text-sm rounded-lg p-2.5;
+	}
+}
+@layer base {
+	li {
+		@apply font-semibold text-lg;
+	}
+	li > a {
+		@apply hover:text-gray-500;
+	}
+}
+
+html {
+	scroll-behavior: smooth;
+}
