@@ -20,9 +20,9 @@ export const Navbar = ({ identity }: { identity: Identity }) => {
 			<ul
 				className={`${
 					showMenu ? `top-20` : `top-[-100%] `
-				}   absolute md:static left-0 w-full flex flex-col md:flex-row m bg-white rounded-b-lg min-h-[40vh] md:min-h-0 md:h-fit md:w-auto transition-all ease-in-out duration-500 p-4 z-40   md:justify-between items-center gap-2 md:gap-4`}
+				}   absolute md:static left-0 w-full flex flex-col md:flex-row m bg-white md:bg-transparent rounded-b-lg min-h-[40vh] md:min-h-0 md:h-fit md:w-auto transition-all ease-in-out duration-500 md:transition-none p-4 z-40   md:justify-between items-center gap-2 md:gap-4`}
 			>
-				<li className={`${showMenu ? "hidden" : "block"}`}>
+				<li className={`hidden md:list-item`}>
 					<Link
 						to="#vehicles"
 						onClick={(e) => {
