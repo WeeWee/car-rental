@@ -81,10 +81,14 @@ export const loader: LoaderFunction = async ({ request }: LoaderArgs) => {
 
 export default function Index() {
 	const { cars, identity, hero, selectedCars } = useLoaderData() as Returntype;
-	const selectedCarsArr = cars?.filter(
-		(car, index) => `${car.name}, ${car.model}` == selectedCars.at(index)
-	);
+	const selectedCarsArr = cars?.filter((car, index) => {
+		return (
+			`${car.name}, ${car.model}` ==
+			selectedCars.filter((car2) => car2 === `${car.name}, ${car.model}`)[0]
+		);
+	});
 
+	console.log(selectedCarsArr);
 	return (
 		<div className=" min-h-screen h-screen">
 			{identity ? <Navbar identity={identity} /> : ""}

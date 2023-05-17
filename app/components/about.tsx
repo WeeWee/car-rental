@@ -19,7 +19,7 @@ export const About = () => {
 					class.
 				</p>
 
-				<div className="bg-black rounded-lg text-white flex flex-col lg:flex-row justify-between max-w-md p-2">
+				<div className="bg-black rounded-lg text-white flex flex-col lg:flex-row justify-between max-w-xs lg:max-w-lg p-2">
 					<div className="flex flex-col md:flex-row lg:flex-col items-center">
 						<ClockIcon className="w-8 h-8 " />
 						<p className="text-sm ml-2">Open 8am - 11pm</p>

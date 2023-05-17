@@ -52,8 +52,18 @@ export const Navbar = ({ identity }: { identity: Identity }) => {
 						Contacts
 					</Link>
 				</li>
+				<li>
+					<button
+						onClick={(e) => {
+							showMenu ? setShowMenu(false) : null;
+						}}
+						className=" bg-black/90 text-white p-[0.4rem] px-7 rounded-lg font-bold hover:shadow-md hover:shadow-gray-400"
+					>
+						Rent now
+					</button>
+				</li>
 			</ul>
-			<button className=" mr-20 bg-black/90 text-white p-[0.4rem] px-7 rounded-lg font-bold hover:shadow-md hover:shadow-gray-400">
+			<button className="hidden lg:block mr-20 bg-black/90 text-white p-[0.4rem] px-7 rounded-lg font-bold hover:shadow-md hover:shadow-gray-400">
 				Rent now
 			</button>
 			<div
